@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->  
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+     <header>
+       <div class="scoreBoard">
+          <div class="text">
+            <ul>
+               <li>ROCK</li>
+               <li>PAPER</li>
+               <li>SCISSORS</li>
+               <li>LIZARD</li>
+               <li>SPOCK</li>
+            </ul>
+          </div>
+          <div class="card-score">
+           <h4>SCORE</h4>
+           <h2 id="useScoreDisplay">0</h2>
+         </div>
+      </div>
+     </header>
+
+
+
+  <section  class="section-body">
+             <div  class="you-pick">
+             <h3> You Picked</h3>
+             <button id="youPicked" onclick="you()">  <img src="" alt="" class=""  id="youImage"> </button> 
+         </div>
+         <div class="result-btn">
+             <h2 id="result"></h2>
+             <button id="randomPick">PLAY</button>
+           </div>
+           <div class="house-pick">
+               <h3> The House Picked</h3>
+               <button   id="housePicked"  onclick="house()"><img src="" alt="" id="houseImage"> </button>
+         </div>
+  </section>
+
+  <section class="rules">
+       <img src="" alt="" id="imageIcon">
+      <button id="rules-btn"   onclick="show()">RULES</button>
+  </section>
+
+  <!-- scrimba
+  <h1>Emoji<br>Fighter</h1>
+  <div id="stage"></div>
+  <button id="fightButton">Pick Fighters!</button> -->
+
+
+
+<!-- 
+<h2>Computer Choice: <spa id="computer-choice"></spa></h2>
+<h2>Your Choice:<span id="user-choice"></span></h2>
+<h2>Result:<span id="result"></span></h2>
+
+<button id="rock">Rock</button>
+<button id="paper">Paper</button>
+<button id="scissors">Scissors</button>
+
+
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+
+
+
+<!-- 
+  <div class="game__section">
+    <img src="" alt="" id="youpick">
+    <h2>Result:<span id="resultEl"></span></h2>
+   <img src="" alt="" id="housepick">
+    <button  id="randompick">Random</button>
+
+  </div> -->
+
+  <script src="index.js"></script>
+</body>
+</html>

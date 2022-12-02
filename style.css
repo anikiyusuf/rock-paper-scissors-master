@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Barlow:ital,wght@1,600&family=Epilogue:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,900&family=Josefin+Sans:wght@400;700&family=Manrope:wght@600;800&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&family=Outfit:wght@600&family=Overpass:wght@400;600;700&family=Oxygen+Mono&family=Pacifico&family=Poppins:wght@600&family=Public+Sans:wght@700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@900&family=Red+Hat+Text:wght@600&family=Roboto+Mono&family=Rubik:wght@400;500&family=Space+Mono:wght@700&family=Ubuntu:wght@700&display=swap');
+
+:root{
+--Scissors-Gradient: hsl(39, 89%, 49%);
+--Scissors-Gradient-Two:hsl(40, 84%, 53%);
+--Paper-Gradient: hsl(230, 89%, 62%) ;
+--Paper-Gradient-Two: hsl(230, 89%, 65%);
+--Rock-Gradient:hsl(349, 71%, 52%) ;
+--Rock-Gradient-Two: hsl(349, 70%, 56%);
+--Lizard-Gradient: hsl(261, 73%, 60%) ;
+--Lizard-Gradient:hsl(261, 72%, 63%);
+--Cyan: hsl(189, 59%, 53%) ;
+--Cyan: hsl(189, 58%, 57%);
+--Dark-Text: hsl(229, 25%, 31%);
+--Score-Text: hsl(229, 64%, 46%);
+--Header-Outline: hsl(217, 16%, 45%);
+--Radial-Gradient: hsl(214, 47%, 23%) ;
+--Radial-Gradient-Two: hsl(237, 49%, 15%);
+--button-background:hsl(224, 46%, 17%);
+--mobile:576px;
+--tablet:768px;
+--laptop:992px;
+--desktop:1200px;
+}
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+  width:100%;
+  height: 100vh;
+  background-color:var(--Radial-Gradient-Two);
+}
+
+
+.scoreBoard{
+  display:flex;
+  background-color: transparent;
+  width:500px;
+  border-radius: 1rem;
+  border: 1px solid white;
+  margin:50px auto;
+  padding:15px;
+ justify-content: space-between;
+}
+.scoreBoard > .text > ul{
+   list-style: none;
+   color:white;
+   font-weight: 600;
+}
+
+
+.card-score{
+  background-color: white;
+  text-align: center;
+  padding:0.3rem 1.5rem;
+  border-radius: 0.5rem;
+  
+
+}
+
+
+.card-score > h4{
+  color:var(--Score-Text);
+  font-size: 13px;
+  font-weight: 600;
+  place-items: center;
+ margin-top: 1rem;
+ 
+  
+  
+}
+
+  .card-score > h2{
+  color:var(--Dark-Text);
+  font-weight: 600;
+  font-size: 2rem;
+  place-items: center;
+  
+  
+}
+
+/*  Section Body style  */
+.section-body{
+      place-content: center;
+      place-items: center;
+      display: flex;
+      margin-top: 5rem;
+      
+}
+
+
+
+/*  You pick */
+.you-pick{
+  padding-right: 60px;
+
+}
+
+.you-pick > h3{
+    color:#fff;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+
+
+.you-pick > button {
+  background-color:var(--button-background);
+  border-radius: 50%;
+  height: 150px;
+  width:150px;
+ display: inline-block;
+ border-color: transparent;
+}
+
+.you-pick > button:hover{
+  background-color:white ;
+  border:15px solid var(--Paper-Gradient);
+}
+
+
+
+
+
+/* House Pick */
+.house-pick{
+  padding-left: 60px;
+
+}
+.house-pick > h3{
+  color:#fff;
+  font-weight: 600;
+  padding-bottom: 40px;
+
+}
+
+
+.house-pick > button {
+background-color:var(--button-background);
+border-radius: 50%;
+height: 150px;
+width:150px;
+display: inline-block;
+border-color: transparent;
+}
+.house-pick > button:hover{
+  background-color:white ;
+  border:15px solid var(--Scissors-Gradient-Two);
+}
+
+
+/* Play Again Button  */
+.result-btn{
+    padding-top:80px;
+    line-height: 2;
+}
+
+
+.result-btn > #result{
+   color:#fff;
+   text-align: center;
+   text-transform: uppercase;
+   
+}
+.result-btn > button {
+  background-color: #fff;
+  color:var(--Dark-Text);
+  place-items: center;
+  padding:8px 60px;
+  border-radius: 4px;
+  font-weight: bold;
+  place-content: center;
+  border: none;
+}
+
+
+/*  Rules */
+
+
+.rules{
+  margin-left: 75rem;
+  margin-top: 10rem;
+}
+
+.rules > button {
+  background: transparent;
+  border-color:#fff;
+  color: #fff;
+  text-align: center;
+  padding:5px 25px;
+  border-radius:5px;
+}
+/* 
+.open{
+    transform:translateX(0%);
+} */
+
+
+@media (max-width:1200px){
+  .rules{
+    margin-left: 55rem;
+   
+  }
+   
+}
+
+
+@media (max-width:992px){
+  .rules{
+    margin-left: 45rem;
+   
+  }
+   
+}
+@media (max-width:768px){
+  .rules{
+    margin-left: 40rem;
+   
+  }
+   
+}
+
+@media (max-width:576px){
+  .scoreBoard{
+    width:300px
+  }
+
+  .rules{
+   align-self: center;
+  }
+   
+}
+
+
+
+
+
+
+
+
+
